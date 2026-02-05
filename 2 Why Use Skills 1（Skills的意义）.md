@@ -1,6 +1,12 @@
+# 2.Why Use Skills 1（Skills的意义）
+
 # Why Use Skills - Skills的意义
 
+![alt text](./images/2.1.png)
+
 # 1 WHAT | SKILL 是什么
+
+![alt text](./images/2.2.png)
 
 - 一种轻量、开放的格式，用于扩展 AI agent 能力 | A lightweight, open format for extending AI agent capabilities
 - 一个组织好的文件夹，由以下部分组成 | A folder of organized files consisting of:
@@ -62,7 +68,9 @@ Skills 是 AI Agent 系统实现复杂自动化与专业化任务的核心单元
 
 ## 4.1 目录结构示例
 
-以"分析营销活动"为例，Skill 目录结构如下：
+![alt text](./images/2.2.png)
+
+以”分析营销活动”为例，Skill 目录结构如下：
 
 ```
 analyzing-marketing-campaign/
@@ -74,8 +82,13 @@ analyzing-marketing-campaign/
 
 - `SKILL.md`：主说明文档，描述 Skill 用途、输入输出、核心流程
 - `references/`：存放参考规则、模板、辅助文档等
+    
+    ![alt text](./images/2.4.png)
+    
 
 ## 4.2 SKILL.md 内容与 YAML元数据
+
+![alt text](./images/2.5.png)
 
 SKILL.md 通常包含 YAML Frontmatter（元数据区块），以及详细的任务描述、输入输出格式、核心指标和操作流程。例如：
 
@@ -90,18 +103,17 @@ outputs:
 ---
 
 ## 任务流程
-1. 读取Excel/CSV数据。
-2. 计算各渠道CTR（点击率）、CVR（转化率）。
-3. 计算ROAS（广告回报率）、CPA（获客成本）、净利润等效率指标。
-4. 输出对比表格，生成分析解读与预算建议。
+1.读取Excel/CSV数据。
+2.计算各渠道CTR（点击率）、CVR（转化率）。
+3.计算ROAS（广告回报率）、CPA（获客成本）、净利润等效率指标。
+4.输出对比表格，生成分析解读与预算建议。
 
 ## 公式示例
-- CTR% = Clicks / Impressions * 100
-- CVR% = Conversions / Clicks * 100
-- ROAS = Revenue / Spend
-- CPA = Spend / Conversions
-- Net Profit = Revenue - (Spend + 其它成本)
-
+-CTR% = Clicks / Impressions * 100
+-CVR% = Conversions / Clicks * 100
+-ROAS = Revenue / Spend
+-CPA = Spend / Conversions
+-Net Profit = Revenue - (Spend + 其它成本)
 ```
 
 ## 4.3 Excel Skills 的实现与案例
@@ -116,12 +128,12 @@ outputs:
 
 ### 4.3.2 Excel Skill 实现的技术路线
 
-#### 工具选择
+### 工具选择
 
 - **pandas**：适合批量数据处理、分析、导出
 - **openpyxl**：适合复杂格式、公式、Excel 特性操作
 
-#### 工作流程
+### 工作流程
 
 1. **选择工具**：根据需求选择 pandas 或 openpyxl
 2. **创建/加载文件**：新建或读取工作簿
@@ -129,28 +141,6 @@ outputs:
 4. **保存文件**：写回 Excel
 5. **公式重算**：如涉及公式，需用 recalc.py 脚本进行重算（openpyxl 仅写入公式字符串，不计算结果）
 6. **错误校验与修复**：Skill 应返回 JSON 报告所有错误类型和位置，便于二次修正
-
-#### 代码实现片段（Python）
-
-```python
-import pandas as pd
-
-# 读取数据
-df = pd.read_excel('input.xlsx')
-
-# 计算总销售额
-total_sales = df['销售额'].sum()
-
-# 查找最大销售额行
-max_row = df.loc[df['销售额'].idxmax()]
-
-# 合并表格
-df1 = pd.read_excel('客户列表.xlsx')
-df2 = pd.read_excel('订单记录.xlsx')
-merged = pd.merge(df1, df2, on='客户ID')
-merged.to_excel('客户订单总表.xlsx', index=False)
-
-```
 
 ### 4.3.3 Skill 文件夹完整结构
 
@@ -167,8 +157,10 @@ excel-skill/
 
 ```
 
+![alt text](./images/2.6.png)
+
 - `scripts/`：存放数据处理、公式重算等 Python 脚本
-- `references/`：输入样例、输出模板、规则文档
+- `references`：输入样例、输出模板、规则文档
 - `SKILL.md`：说明 Skill 用途、输入输出、流程与注意事项
 
 ### 4.3.4 实践建议与最佳实践
