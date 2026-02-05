@@ -5,6 +5,7 @@
 本项目围绕吴恩达老师在DeepLearning.AI出品的agent-skills-with-anthropic系列课程，为学习者打造中文翻译与知识整理教程。项目提供课程内容翻译、知识点梳理和示例代码解读等内容，欢迎大家Star!
 
 **视频课程地址：** [DeepLearning.AI - agent-skills-with-anthropic](https://www.deeplearning.ai/short-courses/agent-skills-with-anthropic/)
+
 **官网解读教程：** [sc-agent-skills-files](https://github.com/https-deeplearning-ai/sc-agent-skills-files)
 
 
