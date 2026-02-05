@@ -1,0 +1,180 @@
+\documentclass[14pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+\geometry{margin=1in}
+
+% Code formatting settings
+\lstset{
+    basicstyle=\ttfamily\footnotesize,
+    breaklines=true,
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    language=Python,
+    showstringspaces=false,
+    commentstyle=\color{gray},
+    keywordstyle=\color{blue},
+    stringstyle=\color{red},
+    tabsize=4,
+    captionpos=b
+}
+
+% Custom command for question numbering
+\newcounter{questionnum}
+\setcounter{questionnum}{0}
+\newcommand{\question}[1]{
+    \stepcounter{questionnum}
+    \vspace{0.5cm}
+    \noindent\textbf{Question \arabic{questionnum}:} #1
+    \vspace{0.3cm}
+}
+
+\title{\textbf{Practice Questions for [DOCUMENT_TITLE]}}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Instructions}
+These practice questions are designed to test your understanding of the material covered in the lecture. Work through each question carefully and show your reasoning. The questions cover key machine learning concepts, require explanation of main topics, include a coding implementation task, and present a realistic use case for applying what you've learned.
+
+\vspace{0.5cm}
+
+% ============================================
+% TRUE/FALSE QUESTIONS
+% ============================================
+
+\section*{Part 1: True/False Questions}
+
+\question{[TRUE_FALSE_QUESTION_1]}
+
+\question{[TRUE_FALSE_QUESTION_2]}
+
+\question{[TRUE_FALSE_QUESTION_3]}
+
+% Add more T/F questions as needed based on learning objectives
+
+\vspace{1cm}
+
+% ============================================
+% EXPLANATORY QUESTIONS
+% ============================================
+
+\section*{Part 2: Explanatory Questions}
+
+\question{[EXPLANATORY_QUESTION_1]}
+
+\question{[EXPLANATORY_QUESTION_2]}
+
+\question{[EXPLANATORY_QUESTION_3]}
+
+\question{[EXPLANATORY_QUESTION_4]}
+
+% Add 3-5 explanatory questions total
+
+\vspace{1cm}
+
+% ============================================
+% CODING QUESTION
+% ============================================
+
+\section*{Part 3: Coding Question}
+
+\question{[CODING_QUESTION_TITLE]}
+
+[Brief description of what to implement]
+
+\textbf{Steps:}
+\begin{enumerate}
+    \item [Step 1]
+    \item [Step 2]
+    \item [Step 3]
+    \item [Step 4]
+\end{enumerate}
+
+\textbf{Function Signature:}
+\begin{lstlisting}
+def function_name(parameters) -> return_type:
+    """
+    Brief description
+    
+    Args:
+        param1: description
+        param2: description
+    
+    Returns:
+        description
+    """
+    pass
+\end{lstlisting}
+
+\textbf{Example:}
+\begin{lstlisting}
+# Input
+[input_example]
+
+# Output
+[output_example]
+\end{lstlisting}
+
+\textbf{Hints:}
+\begin{itemize}
+    \item [Hint 1]
+    \item [Hint 2]
+    \item [Hint 3]
+\end{itemize}
+
+\vspace{1cm}
+
+% ============================================
+% USE CASE QUESTION
+% ============================================
+
+\section*{Part 4: Use Case Application}
+
+\question{[USE_CASE_TITLE]}
+
+\textbf{Scenario:}
+
+[2-4 sentence description of realistic scenario]
+
+\textbf{Data:}
+
+[Description of data or code to generate data]
+
+\begin{lstlisting}
+# Data generation code
+import numpy as np
+import pandas as pd
+
+# Generate sample data
+[data_generation_code]
+\end{lstlisting}
+
+\textbf{Task:}
+
+[Specific requirements - what needs to be accomplished]
+
+\textbf{Requirements:}
+\begin{itemize}
+    \item [Requirement 1]
+    \item [Requirement 2]
+    \item [Requirement 3]
+\end{itemize}
+
+\textbf{Hints:}
+\begin{itemize}
+    \item [Hint 1 - guides toward approach]
+    \item [Hint 2 - implementation suggestion]
+    \item [Hint 3 - important consideration]
+\end{itemize}
+
+\end{document}
