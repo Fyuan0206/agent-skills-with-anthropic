@@ -1,4 +1,13 @@
-# agent-skills-with-anthropic
+
+<div align=center>
+  <img src="./images/head-img.png" >
+  <h1>agent-skills-with-anthropic</h1>
+</div>
+
+<div align="center">
+
+
+
 
 ## 项目简介
 
@@ -39,9 +48,30 @@
 | 9、Skills with the Claude Agent SDK | 查昊南 | 邓一纯 |
 | 10、Conclusion | 陈辅元 | 李智江 |
 
+
+
+## 致谢
+
+- 特别感谢 [@Datawhale](https://github.com/datawhalechina) 对本项目的支持
+- 如果有任何想法可以联系我们，也欢迎大家多多提出 issue
+- 特别感谢以下为教程做出贡献的同学！
+<div align=center style="margin-top: 30px;">
+<a href="https://github.com/agent-skills-with-anthropic/undefined/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=agent-skills-with-anthropic/undefined" />
+</a>
+</div
+
+
+
+
 ## 关注我们
 
 <div align=center>
 <p>扫描下方二维码关注公众号：Datawhale</p>
 <img src="https://raw.githubusercontent.com/datawhalechina/pumpkin-book/master/res/qrcode.jpeg" width = "180" height = "180">
 </div>
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=datawhalechina/agent-skills-with-anthropic&type=date&legend=top-left)](https://www.star-history.com/#datawhalechina/agent-skills-with-anthropic&type=date&legend=top-left)
