@@ -76,4 +76,4 @@
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=datawhalechina/agent-skills-with-anthropic&type=date&legend=top-left)](https://www.star-history.com/#datawhalechina/agent-skills-with-anthropic&type=date&legend=top-left)
+[![Star History Chart](https://star-history.dera.page/svg?repos=datawhalechina/agent-skills-with-anthropic&type=date&legend=top-left)](https://star-history.dera.page/#datawhalechina/agent-skills-with-anthropic&type=date&legend=top-left)
